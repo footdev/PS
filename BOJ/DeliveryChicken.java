@@ -9,6 +9,7 @@ public class DeliveryChicken {
     static int N;
     static int M;
     static int[][] map;
+    static boolean[] checked;
     static ArrayList<Point> chickenMap;
     static ArrayList<Point> houseMap;
     static Stack<Point> selectedChicken;
@@ -21,9 +22,14 @@ public class DeliveryChicken {
         }
 
         for(int i = start; i < chickenMap.size(); i++) {
-            selectedChicken.push(chickenMap.get(i));
-            dfs(start+1, cnt+1);
+            if(!checked[i]) {
+                selectedChicken.push(chickenMap.get(i));
+            }
+            dfs(i+1, cnt+1);
             selectedChicken.pop();
+            if(selectedChicken.isEmpty()) {
+                checked[i] = true;
+            }
         }
     }
 
@@ -70,7 +76,7 @@ public class DeliveryChicken {
                 }
             }
         }
-
+        checked = new boolean[chickenMap.size()];
         dfs(0, 0);
         System.out.println(minDist);
     }
