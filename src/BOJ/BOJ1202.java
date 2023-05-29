@@ -3,26 +3,6 @@ package BOJ;
 import java.io.*;
 import java.util.*;
 
-class Jewel implements Comparable<Jewel>{
-    int weight;
-    int cost;
-
-    public Jewel(int weight, int cost) {
-        this.weight = weight;
-        this.cost = cost;
-    }
-
-
-    @Override
-    public int compareTo(Jewel o) {
-        int comp = Integer.compare(weight, o.weight);
-        if(comp == 0) {
-            return Integer.compare(cost, o.cost);
-        }
-        return comp;
-    }
-}
-
 public class BOJ1202 {
     static BufferedReader br;
     static StringTokenizer st;
@@ -112,5 +92,25 @@ public class BOJ1202 {
 
     static int stoi(String s) {
         return Integer.parseInt(s);
+    }
+
+    static class Jewel implements Comparable<Jewel>{
+        int weight;
+        int cost;
+
+        public Jewel(int weight, int cost) {
+            this.weight = weight;
+            this.cost = cost;
+        }
+
+
+        @Override
+        public int compareTo(Jewel o) {
+            int comp = Integer.compare(weight, o.weight);
+            if(comp == 0) {
+                return Integer.compare(cost, o.cost);
+            }
+            return comp;
+        }
     }
 }
