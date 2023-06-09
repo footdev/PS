@@ -124,14 +124,14 @@ public class BOJ17144 {
 
         map[airCleaner[1].x][1] = 0;
     }
-}
+    static class Pair {
+        int x;
+        int y;
 
-class Pair {
-    int x;
-    int y;
-
-    public Pair(int x, int y) {
-        this.x = x;
-        this.y = y;
+        public Pair(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
     }
 }
+

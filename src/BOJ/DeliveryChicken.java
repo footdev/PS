@@ -82,13 +82,13 @@ public class DeliveryChicken {
         dfs(0, 0);
         System.out.println(minDist);
     }
-}
-
-class Point {
-    int x;
-    int y;
-    public Point(int x, int y) {
-        this.x = x;
-        this.y = y;
+    static class Point {
+        int x;
+        int y;
+        public Point(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
     }
 }
+

@@ -102,14 +102,14 @@ public class BOJ21610 {
     }
 
     static int stoi(String s) {return Integer.parseInt(s);}
-}
+    static class Pair {
+        int x;
+        int y;
 
-class Pair {
-    int x;
-    int y;
-
-    public Pair(int x, int y) {
-        this.x = x;
-        this.y = y;
+        public Pair(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
     }
 }
+

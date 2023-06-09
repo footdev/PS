@@ -3,14 +3,7 @@ package BOJ;
 import java.io.*;
 import java.util.*;
 
-class Node {
-    int num;
-    int cnt;
-    Node(int num, int cnt) {
-        this.num = num;
-        this.cnt = cnt;
-    }
-}
+
 
 public class HideAndSeek {
     static BufferedReader br;
@@ -70,6 +63,15 @@ public class HideAndSeek {
                     checked[num*2] = true;
                 }
             }
+        }
+    }
+    static class Node {
+        int num;
+        int cnt;
+
+        Node(int num, int cnt) {
+            this.num = num;
+            this.cnt = cnt;
         }
     }
 }

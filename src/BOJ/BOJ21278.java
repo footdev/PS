@@ -3,14 +3,6 @@ package BOJ;
 import java.io.*;
 import java.util.*;
 
-class Point {
-    int node;
-    int cnt;
-    Point(int node, int cnt) {
-        this.node = node;
-        this.cnt = cnt;
-    }
-}
 public class BOJ21278 {
     static BufferedReader br;
     static StringTokenizer st;
@@ -121,4 +113,12 @@ public class BOJ21278 {
     }
 
     static int stoi(String s) {return Integer.parseInt(s);}
+    static class Point {
+        int node;
+        int cnt;
+        Point(int node, int cnt) {
+            this.node = node;
+            this.cnt = cnt;
+        }
+    }
 }

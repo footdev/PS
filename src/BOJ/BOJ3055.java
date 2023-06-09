@@ -85,17 +85,17 @@ public class BOJ3055 {
     }
 
     static int stoi(String s) {return Integer.parseInt(s);}
-}
-
-class Point {
-    int x;
-    int y;
-    char state;
-    int cnt;
-    Point(int x, int y, char c, int cnt) {
-        this.x = x;
-        this.y = y;
-        this.state = c;
-        this.cnt = cnt;
+    static class Point {
+        int x;
+        int y;
+        char state;
+        int cnt;
+        Point(int x, int y, char c, int cnt) {
+            this.x = x;
+            this.y = y;
+            this.state = c;
+            this.cnt = cnt;
+        }
     }
 }
+

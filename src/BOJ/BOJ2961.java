@@ -3,14 +3,6 @@ package BOJ;
 import java.io.*;
 import java.util.*;
 
-class Info {
-    int a;
-    int b;
-    Info(int a, int b) {
-        this.a = a;
-        this.b = b;
-    }
-}
 
 public class BOJ2961 {
     static BufferedReader br;
@@ -65,4 +57,13 @@ public class BOJ2961 {
     }
 
     static int stoi(String s) {return Integer.parseInt(s);}
+
+    static class Info {
+        int a;
+        int b;
+        Info(int a, int b) {
+            this.a = a;
+            this.b = b;
+        }
+    }
 }

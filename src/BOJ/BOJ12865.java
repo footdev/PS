@@ -11,7 +11,7 @@ public class BOJ12865 {
     static Jewel[] jewels;
 
     public static void main(String[] args) throws IOException {
-        br = new BufferedReader(new InputStreamReader(Systxem.in));
+        br = new BufferedReader(new InputStreamReader(System.in));
         st = new StringTokenizer(br.readLine());
 
         //초기 입력
@@ -62,14 +62,14 @@ public class BOJ12865 {
     static int bottom_up(int n, int k) {
         return 1;
     }
-}
+    static class Jewel {
+        int w;
+        int v;
 
-class Jewel {
-    int w;
-    int v;
-
-    public Jewel(int w, int v) {
-        this.w = w;
-        this.v = v;
+        public Jewel(int w, int v) {
+            this.w = w;
+            this.v = v;
+        }
     }
 }
+
